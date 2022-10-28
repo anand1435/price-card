@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(224,232,255);
+}
+.bg-img{
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .card{
+    background-color: white;
+    z-index: 1;
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card .card-imgBox{
+    width: 100%;
+    height: 180px;
+}
+.card-imgBox img{
+    width: 100%;
+    height: 100%;
+}
+.card-content{
+    padding:30px;
+    text-align: center;
+}
+.card-summary h2{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+.card-summary p{
+    color: gray;
+    font-size: .9rem;
+    text-align:center;
+    line-height: 24px;
+}
+.card-plans{
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fe;
+    height: 60px;
+    margin: 20px 0;
+    padding: 0 17px;
+}
+.music-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.music-icon img{
+    width: 100%;
+    height: 100%;
+}
+.price{
+    margin-left: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.price h3{
+    font-weight: 600;
+    font-size: .9em;
+}
+.price p{
+    color: gray;
+    font-size: .9rem;
+    margin-top: 4px;
+}
+.change-btn{
+    margin-left: auto;
+}
+.change-btn a{
+    text-decoration: none;
+    font-size: .8em;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgb(118,108,241);
+}
+.change-btn a:hover{
+    transform: all 0.4s ease-in;
+    color: rgb(23, 23, 225);
+    text-decoration: none;
+}
+.card-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#paymentBtn{
+    text-decoration: none;
+    background: rgb(118,108,241);
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(119,108,241,0.5);
+}
+#cancelBtn{    
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+@media only screen and (max-width: 556px) {
+    .bg-img{
+        background-image: url('/images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
